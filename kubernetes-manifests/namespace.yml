@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: examen-26
+  labels:
+    name: examen-26
+    project: chuzone
+    environment: production

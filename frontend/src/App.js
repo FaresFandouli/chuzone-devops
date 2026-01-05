@@ -187,4 +187,3 @@ function App() {
 }
 
 export default App;
-"// CI/CD with npx" 

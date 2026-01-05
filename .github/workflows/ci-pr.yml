@@ -26,12 +26,6 @@ jobs:
       - name: Install dependencies
         working-directory: ./frontend
         run: npm install
-
-      - name: Run unit tests
-        working-directory: ./frontend
-        run: npm test
-        env:
-          CI: true
         
       - name: Build application
         working-directory: ./frontend

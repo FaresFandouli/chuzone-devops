@@ -11,7 +11,7 @@ env:
 
 jobs:
   test-and-build:
-    name: Test & Build Frontend
+    name: Build Frontend
     runs-on: ubuntu-latest
     
     steps:
@@ -23,10 +23,12 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      - name: Install dependencies with executable permissions
         working-directory: ./frontend
-        run: npm install
-        
+        run: |
+          npm install
+          chmod -R +x node_modules/.bin
+
       - name: Build application
         working-directory: ./frontend
         run: npm run build

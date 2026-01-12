@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: VOTRE_USERNAME/chuzone-frontend:1.0.0
+        image: faresfandouli/chuzone-frontend:1.0.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80

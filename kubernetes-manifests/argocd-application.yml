@@ -7,9 +7,9 @@ spec:
   project: default
   
   source:
-    repoURL: https://github.com/VOTRE_USERNAME/chuzone-gitops.git
+    repoURL: https://github.com/FaresFandouli/chuzone-devops.git
     targetRevision: main
-    path: .
+    path: kubernetes-manifests
   
   destination:
     server: https://kubernetes.default.svc
